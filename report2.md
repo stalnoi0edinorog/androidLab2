@@ -9,16 +9,28 @@
 Продемонстрировать жизненный цикл Activity на любом нетривиальном примере.  
 
 #### Пример №1. Переход в режим энергосбережения
-При запуске вызываются следующие методы onCreate() -> onStart,() -> onResume(). При переходе в режим энергосбережения была вызвана следующая цепочка методов:
+При запуске вызываются следующие методы onCreate() -> onStart,() -> onResume(). 
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/start.JPG)
+
+При переходе в режим энергосбережения была вызвана следующая цепочка методов:
 onPause() -> onStop() -> onSaveInstanceState() -> onDestroy() -> onCreate() -> onStart() -> onRestoreInstanceState() -> onResume().
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/energy.JPG)
 
 #### Пример №2. Звонок на телефон
-При ответе на вызов были вызваны следующие методы onPause() -> onStop() -> onSaveInstanceState(). После возвращения в приложение (независимо от того был сброшен звонок или нет) была вызвана следующая цепочка методов: onRestart() -> onStart() -> onResume().
+При ответе на вызов были вызваны следующие методы onPause() -> onStop() -> onSaveInstanceState(). 
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/call.JPG)
+
+После возвращения в приложение (независимо от того был сброшен звонок или нет) была вызвана следующая цепочка методов: onRestart() -> onStart() -> onResume().
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/call2.JPG)
 
 ### Задача 2. Alternative Resources  
 #### Задание  
 Продемонстрировать работу альтернативного ресурса ** UI mode ** на каком-либо примере.
 Была создана отдельная директория для интерфейса под телевизор. Идея проста - размер шрифта, удобного для просмотра с телефона, будет слишком мелок для прочтения с телевизора.
+
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/phone.JPG)
+![Иллюстрация к проекту](https://github.com/stalnoi0edinorog/androidLab2/blob/master/forReports/television.JPG)
+
 
 ### Задача 3. Best-matching resource  
 Для заданного набора альтернативных ресурсов, предоставляемых приложением, и заданной конфигурации устройства объяснить, какой ресурс будет выбран в конечном итоге. Ответ доказать.
