@@ -301,15 +301,15 @@
 
 Листинг menu_nuv.xml:
 
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/about"
         android:icon="@drawable/sentiment_satisfied"
         android:title="Activity about"
         />
-</menu>
+    </menu>
 
 Если не указать все Activty в Манифесте, то приложение закроется при попытке перейти в незарегистрированное Activity.
 
@@ -325,7 +325,7 @@
                 startActivity(intent)
             }
 
-В ThirdActivity меняем меняем listener кнопки перехода в 1-е activity:
+В ThirdActivity меняем listener кнопки перехода в 1-е activity:
 
     binding.bnGoTo1.setOnClickListener {
                 //setResult(Activity.RESULT_OK) //2
