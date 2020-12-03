@@ -112,18 +112,18 @@ onPause() -> onStop() -> onSaveInstanceState() -> onDestroy() -> onCreate() -> o
 
 ### MainActivity.kt
 
-package com.example.lab2
+    package com.example.lab2
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.PersistableBundle
-import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
+    import androidx.appcompat.app.AppCompatActivity
+    import android.os.Bundle
+    import android.os.PersistableBundle
+    import android.util.Log
+    import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-    private val TAG = "Life_Cycle"
-    private var check = true
-    var secondsElapsed: Int = 0
+    class MainActivity : AppCompatActivity() {
+        private val TAG = "Life_Cycle"
+        private var check = true
+        var secondsElapsed: Int = 0
 
     var backgroundThread = Thread {
         while (true) {
