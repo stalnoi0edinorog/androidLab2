@@ -204,13 +204,13 @@ onPause() -> onStop() -> onSaveInstanceState() -> onDestroy() -> onCreate() -> o
 </resources>
 
 ### Листинг values-television/styles.xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">#000000</item>
-        <item name="android:textSize">36sp</item>
-    </style>
+            <item name="android:gravity">center</item>
+            <item name="android:textColor">#000000</item>
+            <item name="android:textSize">36sp</item>
+        </style>
 
-</resources>
+    </resources>
